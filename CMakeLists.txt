@@ -1,3 +1,6 @@
+PROJECT(python-kdevpython)
+cmake_minimum_required(VERSION 2.8)
+
 add_custom_target(
     parser
     COMMAND /bin/bash ${CMAKE_CURRENT_SOURCE_DIR}/configure --enable-shared --without-pymalloc WORKING_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}
